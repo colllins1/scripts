@@ -3,7 +3,8 @@
 
 LOG_DIR=/var/log
 LOG_OLD=1
-ERROR_PATERN=("FATAL" "CRITICAL" "ERROR" "WARNING")
+#ERROR_PATERN=("FATAL" "CRITICAL" "ERROR" "WARNING")
+ERROR_PATERN=("FATAL" "CRITICAL" "ERROR")
 
 LOG_FILES=$(find $LOG_DIR/ -name *.log -mtime -$LOG_OLD)
 echo -e "\n======================================================"
